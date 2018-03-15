@@ -46,8 +46,8 @@ Extra info:
 none
 
 ## Axiatinc's Tasks
-- [ ] Basic ping command
-- [ ] Add a event handler for if the bot is being added to a server and log it to the console
+- [X] Basic ping command
+- [X] Add a event handler for if the bot is being added to a server and log it to the console 
 - [ ] Create a way for a user to register, after that event is fired create the user in the database  
 └ ALSO make an array with the default user data! Use this array to fill in the blank spots in the database table. (See the database table for all the fields)
 
