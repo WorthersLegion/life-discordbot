@@ -21,8 +21,7 @@ Suggestion:
 - [ ] *[Androiddd] Your mom gay*
 
 Extra info:
-- [ ] *Some thing that you have to code*
-  
+- [ ] *Some thing that you have to code*  
 └ Extra info is here
 
 # LIST
