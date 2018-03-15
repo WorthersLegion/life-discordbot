@@ -131,7 +131,7 @@ bot.on("ready", () => {
 // ALL OTHER CODE HERE!
 
 bot.registerCommand('ping', (msg) => {
-  bot.createMessage(msg.channel.id, 'pong').
+  bot.channel.createMessage('pong').
   then(newMsg => {
     bot.editMessage(newMsg.channel.id, newMsg.id, `\`\`\`javascript/npong | Time taken: ${newMsg.timestanp - msg.timestamp} ms\`\`\``);
   })
@@ -142,8 +142,8 @@ bot.on('guildCreate', (guild) => {
 });
 
 bot.registerCommand('start', (msg) => {
-  bot.createMessage(msg.channel.id, `Welcome to The Game of Life! I've made you an account, so use ${botPrefix}help to get started!`)
-  mysql_con.registerUser(); //* Not sure if i exactly did this right, please tell me if i did, With the mysql_con.registerUser(); part *//
+  bot.channel.createMessage(`Welcome to The Game of Life! I've made you an account, so use ${botPrefix}help to get started!`)
+  mysql_con.registerUser();
 })
 
 
