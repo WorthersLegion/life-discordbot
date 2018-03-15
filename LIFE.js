@@ -102,6 +102,8 @@ function isEmpty(str) {
 }
 
 // Functions here!
+
+// Vars, arrays and objects about the game
 var lifeEvents = ["You had an argument with your wife.", "You had a baby boy.", "You had a baby girl.", "You had twins! One baby boy and one baby girl", "You had twins! Two girls!", "You had twins! Two boys!", "You got married!"]
 
 // Ready code TODO: Start over cuz I stole it from myself. (Let Androiddd worry about it)

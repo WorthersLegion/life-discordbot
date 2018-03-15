@@ -33,9 +33,6 @@ Extra info:
 └ If you know the board game you are allowed to make this feature otherwise please try to refrain from making this feature.
 - [ ] Create a way to retire to save your stats to the leaderboard  
 └ Also create a leaderboard in the database.
-- [ ] Create a dynamic event handler that triggers randomly when someone sends a message in the server (just like pokécord (or whatever it's name is))  
-├ With this event handler random (life) events will pop up every now and then for the user that just sended a message (if he/she is registered ofc)  
-└ Think about (life) events like: "You have an argument with your wife, what would you do?" (A: Something, B: Something, C: Something, etc. fill it up with whatever answers you can come up with but don't make like 52 answers)
 
 ## Suggestions
 
@@ -46,27 +43,33 @@ Extra info:
 none
 
 ## Axiatinc's Tasks
-- [X] Basic ping command
-- [X] Add a event handler for if the bot is being added to a server and log it to the console 
-- [X] Create a way for a user to register, after that event is fired create the user in the database  
+- [ ] Add a event handler for if the bot is being added to a server and log it to the console 
+- [ ] Create a way for a user to register, after that event is fired create the user in the database  
 └ ALSO make an array with the default user data! Use this array to fill in the blank spots in the database table. (See the database table for all the fields)
+- [ ] Create a dynamic event handler that triggers randomly when someone sends a message in the server (just like pokécord (or whatever it's name is))  
+├ With this event handler random (life) events will pop up every now and then for the user that just sended a message (if he/she is registered ofc)  
+└ Think about (life) events like: "You have an argument with your wife, what would you do?" (A: Something, B: Something, C: Something, etc. fill it up with whatever answers you can come up with but don't make like 52 answers)
 
 ### Lead developer notes
 
-#### Basic ping command
-Please use msg.channel.createMessage(msg).
-
 #### Add a event handler for if the bot is being added to a server and log it to the console
-Let it also log which guild it's added to.
+~~Let it also log which guild it's added to.~~
+
+Please use the guild name (instead of the id) since this is for logging reasons.
+Also you forgot a space between [CORE][INFO] and ${bot.username}
+Also also it's 'Info' not 'INFO'. Sorry, OCD.
 
 #### Create a way for a user to register, after that event is fired create the user in the database
-What I ment is insert the player info to the database and make an array with some default values that aren't set in the database.
+~~What I ment is insert the player info to the database and make an array with some default values that aren't set in the database.~~
 
-So make a mysql_con.query and use sql INSERT INTO to insert the user info in the table.
-Check the table via the control panel to see what you need to add.
+~~So make a mysql_con.query and use sql INSERT INTO to insert the user info in the table.~~
+~~Check the table via the control panel to see what you need to add.~~
 
-EDIT: Also the mysql.js and botCred.js files are for credentials and such NOT for functions or anything else.
-So make the query in here see ready code for an example on how to use an query
+~~EDIT: Also the mysql.js and botCred.js files are for credentials and such NOT for functions or anything else.~~
+~~So make the query in here see ready code for an example on how to use an query~~
+
+Please see the ready code mysql query (as example) to see how to properly handle a mysql query.
 
 ## Finished (and checked)
 - [X] Change the ready code (by Androiddd)
+- [X] Basic ping command (by Axiatinc)
