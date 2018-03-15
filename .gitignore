@@ -3,3 +3,5 @@ botCred.js
 node_modules
 node_modules/
 package-lock*
+.vscode
+.vscode/
