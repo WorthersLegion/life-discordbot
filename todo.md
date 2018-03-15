@@ -40,7 +40,7 @@ Extra info:
 
 
 ### Lead developer notes
-none
+None cuz I'm the Lead developer. :P
 
 ## Axiatinc's Tasks
 - [ ] Add a event handler for if the bot is being added to a server and log it to the console 
