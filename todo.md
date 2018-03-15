@@ -56,10 +56,10 @@ Or responding to people on Github.
 #### Add a event handler for if the bot is being added to a server and log it to the console
 ~~Let it also log which guild it's added to.~~
 
-Please use the guild name (instead of the id) since this is for logging reasons.  
-Also you forgot a space between `[CORE][INFO]` and `${bot.username}`
+~~Please use the guild name (instead of the id) since this is for logging reasons.  
+Also you forgot a space between `[CORE][INFO]` and `${bot.username}`~~
 
-Also also it's `Info` not `INFO`. Sorry, OCD.
+~~Also also it's `Info` not `INFO`. Sorry, OCD.~~
 
 #### Create a way for a user to register, after that event is fired create the user in the database
 ~~What I ment is insert the player info to the database and make an array with some default values that aren't set in the database.~~
@@ -72,11 +72,11 @@ Also also it's `Info` not `INFO`. Sorry, OCD.
 
 Please see the ready code mysql query (as example) to see how to properly handle a mysql query.
 
-Also make the command `register` not `start`
+~~Also make the command `register` not `start`~~
 
 ## Create a dynamic event handler that triggers randomly when someone sends a message in the server (just like pokécord (or whatever it's name is))
 
-Please recheck your code. Your if statement is incorrect.
+~~Please recheck your code. Your if statement is incorrect.~~
 
 Your `lifeEvents` variable is very good. Just one note: Don't fill it with anything else.  
 How it is right now is a great **placeholder**.  
