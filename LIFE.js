@@ -148,6 +148,18 @@ bot.on("ready", () => {
 
 // ALL OTHER CODE HERE!
 
+// Bot on's:
+bot.on('guildCreate', (guild) => {
+	console.log(colorScheme.info, `[CORE][Info] ${bot.username} was added to the server ${guild.name}!`)
+});
+
+bot.on('messageCreate' (msg) => {
+	if (randomInt(0, 50) === 1) {
+		msg.channel.createMessage(lifeEvents[randomInt(0, lifeEvents.length)])
+	}
+})
+
+// Registered commands
 bot.registerCommand('ping', (msg) => {
 	msg.channel.createMessage('pong').
 	then(newMsg => {
@@ -155,19 +167,9 @@ bot.registerCommand('ping', (msg) => {
 	})
 });
 
-bot.on('guildCreate', (guild) => {
-	console.log(colorScheme.info, `[CORE][Info] ${bot.username} was added to the server ${guild.name}!`)
-});
-
 bot.registerCommand('start', (msg) => {
 	msg.channel.createMessage(`Welcome to The Game of Life! I've made you an account, so use ${botPrefix}help to get started!`)
 	mysql_con.query('INSERT INTO users (user_id, money, job) VALUES (msg.author.id, 0, null)')
-})
-
-bot.on('messageCreate' (msg) => {
-	if (randomInt(0, 50) === 1) {
-		msg.channel.createMessage(lifeEvents[randomInt(0, lifeEvents.length)])
-	}
 })
 
 bot.connect()
