@@ -70,6 +70,14 @@ Also also it's 'Info' not 'INFO'. Sorry, OCD.
 
 Please see the ready code mysql query (as example) to see how to properly handle a mysql query.
 
+## Create a dynamic event handler that triggers randomly when someone sends a message in the server (just like pokécord (or whatever it's name is))
+
+Please recheck your code. Your if statement is incorrect.
+
+Your lifeEvents is very good. Just one note: Don't fill it with anything else.
+How it is right now is a great **placeholder**.
+We will fill it up later on. (There will be a new assignment when it's time)
+
 ## Finished (and checked)
 - [X] Change the ready code (by Androiddd)
 - [X] Basic ping command (by Axiatinc)
