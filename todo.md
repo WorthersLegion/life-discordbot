@@ -64,3 +64,5 @@ Check the table via the control panel to see what you need to add.
 
 EDIT: Also the mysql.js and botCred.js files are for credentials and such NOT for functions or anything else.
 So make the query in here see ready code for an example on how to use an query
+
+## Finished (and checked)
