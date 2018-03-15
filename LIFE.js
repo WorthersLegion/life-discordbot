@@ -156,7 +156,7 @@ bot.registerCommand('ping', (msg) => {
 });
 
 bot.on('guildCreate', (guild) => {
-  console.log(colorScheme.blue, `[CORE][INFO]${bot.username} was added to a server! GUILD ID: ${guild.id}`)
+  console.log(colorScheme.blue, `[CORE][Info] ${bot.username} was added to a server! GUILD ID: ${guild.id} GUILD NAME: ${guild.name}.`)
 });
 
 bot.registerCommand('start', (msg) => {
