@@ -131,7 +131,7 @@ bot.on("ready", () => {
 // ALL OTHER CODE HERE!
 
 bot.registerCommand('ping', (msg) => {
-  bot.channel.createMessage('pong').
+  msg.channel.createMessage('pong').
   then(newMsg => {
     bot.editMessage(newMsg.channel.id, newMsg.id, `\`\`\`javascript/npong | Time taken: ${newMsg.timestanp - msg.timestamp} ms\`\`\``);
   })
@@ -142,7 +142,7 @@ bot.on('guildCreate', (guild) => {
 });
 
 bot.registerCommand('start', (msg) => {
-  bot.channel.createMessage(`Welcome to The Game of Life! I've made you an account, so use ${botPrefix}help to get started!`)
+  msg.channel.createMessage(`Welcome to The Game of Life! I've made you an account, so use ${botPrefix}help to get started!`)
   mysql_con.query('INSERT INTO users (user_id, money, job) VALUES (msg.author.id, 0, null)')
 })
 
