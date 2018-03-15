@@ -1,30 +1,28 @@
-Feature/TODO list for the developers
-1. Assign yourself by putting your name after "assigned to: ".
-2. After you are done with your assignment put a "(v)" after your name and the lead developer (Androiddd) will check your code.
-3. The LEAD DEVELOPER will delete the assignment if the code is good.
-3.1 In the case your code isn't good you will be asked to redo it/make changes before continueing another assignment
-3.2 DO NOT delete assignments yourself!
-4. After you are done with an assignment and checked it off, assign yourself to another assignment and continue your work.
+# Feature/TODO list for the developers
+1. Assign yourself an assignment by moving the assignment to your name (by opening this file in an editor and cut & paste it under your name in this file).
+2. After you are done with your assignment change "- [ ]" to "- [X]" but do not move it to finished yet and the lead developer (Androiddd) will check your code.
+2.1 The LEAD DEVELOPER will move the assignment if the code is good.
+2.2 In the case your code isn't good you will be asked to redo it/make changes before continueing another assignment. There will be a note left for you in this file under your name > Lead developer notes
+2.3 DO NOT move assignments to finished yourself!
+3. After you are done with an assignment and checked it off, assign yourself to another assignment and continue your work.
 
-If you have suggestion please put them on the list in the following format:
-[Suggestion][YOURNAME] DESCRIPTION OF SUGGESTION
+If you have suggestion please put them on under "Suggestions" in the following format:
+[YOURNAME] DESCRIPTION OF SUGGESTION
 
 Ex.:
-Unassigned assignment:
-Some thing that you have to code - assigned to:
 
-Assigned assignment:
-Some thing that you have to codeAndroiddd
+Unassigned/Assigned assignment:
+- [ ] *Some thing that you have to code*
 
 Completed assignment:
-Some thing that you have to codeAndroiddd (v)
+- [X] *Some thing that you have to code*
 
 Suggestion:
-[Suggestion][Androiddd] Your mom gay
+- [ ] *[Androiddd] Your mom gay*
 
 Extra info:
-Some thing that you have to code
-└ Extra info is here
+- [ ] *Some thing that you have to code*
+      *└ Extra info is here*
 
 # LIST
 ## Unassigned
@@ -35,6 +33,8 @@ Some thing that you have to code
 - [ ] Create a dynamic event handler that triggers randomly when someone sends a message in the server (just like pokécord (or whatever it's name is))
       ├ With this event handler random (life) events will pop up every now and then for the user that just sended a message (if he/she is registered ofc)
       └ Think about (life) events like: "You have an argument with your wife, what would you do?" (A: Something, B: Something, C: Something, etc. fill it up with whatever answers you can come up with but don't make like 52 answers)
+
+## Suggestions
 
 ## Androiddd's Tasks
 - [ ] Change the ready code
