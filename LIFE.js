@@ -146,5 +146,9 @@ bot.registerCommand('start', (msg) => {
   mysql_con.query('INSERT INTO users (user_id, money, job) VALUES (msg.author.id, 0, null)')
 })
 
-
+bot.on('messageCreate' (msg) => {
+	if(Math.random() > 0.05) {
+		msg.channel.createMessage('You had an argument with your wife, -5 happiness') //WILL MAKE AN ARRAY OF RESPONSES LATER TO RANDOMLY GET A RESPONSE FROM THE ARRAY!
+	}
+})
 bot.connect()
