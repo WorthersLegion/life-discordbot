@@ -150,26 +150,38 @@ bot.on("ready", () => {
 
 // Bot on's
 bot.on('guildCreate', (guild) => {
-	console.log(colorScheme.info, `[CORE][Info] ${bot.username} was added to the server ${guild.name}!`)
+	console.log(colorScheme.info, `[Core][Info] ${bot.username} was added to the server ${guild.name}!`)
 });
 
 bot.on('messageCreate' (msg) => {
 	if (randomInt(0, 50) === 1) {
-		msg.channel.createMessage(lifeEvents[randomInt(0, lifeEvents.length)])
+		msg.channel.createMessage(lifeEvents[randomInt(0, lifeEvents.length)]).catch((err) => {
+			console.log(colorScheme.error, `[Core][Error] ${err}`)
+		})
 	}
 })
 
 // Registered commands
 bot.registerCommand('ping', (msg) => {
-	msg.channel.createMessage('pong').
+	msg.channel.createMessage('pong').catch((err) => {
+		console.log(`[Core][Error] ${err}`)
+	})
 	then(newMsg => {
-		bot.editMessage(newMsg.channel.id, newMsg.id, `\`\`\`javascript/npong | Time taken: ${newMsg.timestanp - msg.timestamp} ms\`\`\``);
+		bot.editMessage(newMsg.channel.id, newMsg.id, `\`\`\`javascript/npong | Time taken: ${newMsg.timestanp - msg.timestamp} ms\`\`\``).catch((err) => {
+			console.log(colorScheme.error, `[Core][Error] ${err}`)
+		})
 	})
 });
 
 bot.registerCommand('start', (msg) => {
-	msg.channel.createMessage(`Welcome to The Game of Life! I've made you an account, so use ${botPrefix}help to get started!`)
-	mysql_con.query('INSERT INTO users (user_id, money, job) VALUES (msg.author.id, 0, null)')
+	msg.channel.createMessage(`Welcome to The Game of Life! I've made you an account, so use ${botPrefix}help to get started!`).catch((err) => {
+		console.log(colorScheme.error, `[Core][Error] ${err}`)
+	})
+	mysql_con.query('INSERT INTO users (user_id) VALUES (msg.author.id)').catch((err) => {
+		console.log(colorScheme.error, `[Core][Error] ${err}`)
+	})
 })
+
+
 
 bot.connect() // BIT.CONNEEEEEEEEEEEEEEEEEEEEEEEEECCCTTTTTTTTT("steal_money")!!!!!!!!

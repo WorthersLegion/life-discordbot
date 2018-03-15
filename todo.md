@@ -73,9 +73,6 @@ If the user choses this as their first move then give them an random job (**excl
 
 ## Unassigned
 
-- [ ] Create a way to retire to save your stats to the leaderboard
-
-└ Also create a leaderboard in the database.
 
 ## Suggestions
 
@@ -92,7 +89,7 @@ Or responding to people on Github.
 
 ## Axiatinc's Tasks
 
-- [ ] Create a way for a user to register, after that event is fired create the user in the database
+- [X] Create a way for a user to register, after that event is fired create the user in the database
 
 └ ALSO make an array with the default user data! Use this array to fill in the blank spots in the database table. (See the database table for all the fields)
 
@@ -101,6 +98,10 @@ Or responding to people on Github.
 ├ With this event handler random (life) events will pop up every now and then for the user that just sended a message (if he/she is registered ofc)
 
 └ Think about (life) events like: "You have an argument with your wife, what would you do?" (A: Something, B: Something, C: Something, etc. fill it up with whatever answers you can come up with but don't make like 52 answers)
+
+- [ ] Create a way to retire to save your stats to the leaderboard
+
+└ Also create a leaderboard in the database.
 
 ### Lead developer notes
 
