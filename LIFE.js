@@ -143,7 +143,7 @@ bot.on('guildCreate', (guild) => {
 
 bot.registerCommand('start', (msg) => {
   bot.channel.createMessage(`Welcome to The Game of Life! I've made you an account, so use ${botPrefix}help to get started!`)
-  mysql_con.registerUser();
+  mysql_con.query('INSERT INTO users (user_id, money, job) VALUES (msg.author.id, 0, null)')
 })
 
 
