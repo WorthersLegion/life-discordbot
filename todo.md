@@ -67,7 +67,7 @@ etc. you get the point
 
 ## Immediately start working
 
-If the user choses this as their first move then give them an random job (**excluding** )
+If the user choses this as their first move then give them an random job (**excluding** the degree jobs)
 
 # LIST
 
