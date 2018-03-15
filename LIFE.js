@@ -105,7 +105,7 @@ function isEmpty(str) {
 
 // Vars, arrays and objects about the game
 var lifeEvents = ["You had an argument with your wife.", "You had a baby boy.", "You had a baby girl.", "You had twins! One baby boy and one baby girl", "You had twins! Two girls!", "You had twins! Two boys!", "You got married!"]
-var startMessages = ["Good luck with being a parent! ~~You'll regret it.~~", "Wow, someone actually fell for it.", "This is gonna be a rough time, I sure hope your ready for this.", "Theres no going back now."] // Will add more SOON
+var startMessages = ["You have been born. Good luck with life.", "Your consciousness has been put in a car. You are a car now, are you happy?", "Ever wanted to play a game in text? Now you can. Welcome in LIFE.", "Come on Karen, this is the 15th baby you've had.", "Don't you dare start crying now, save your tears for later in life."] // Will add more SOON
 // Ready code TODO: Start over cuz I stole it from myself. (Let Androiddd worry about it)
 bot.on("ready", () => {
 	mysql_con = mysql.createPool({
@@ -174,9 +174,11 @@ bot.registerCommand('ping', (msg) => {
 });
 
 bot.registerCommand('start', (msg) => {
-	msg.channel.createMessage(`Welcome to The Game of Life! I've made you an person, so use ${botPrefix}help to get started! `).catch((err) => {
-		console.log(colorScheme.error, `[Core][Error] ${err}`)
-	})
+	if (randomInt(0, 50) === 1) {
+		msg.channel.createMessage(startMessages[randomint(0, startMessages.length)]).catch((err) => {
+			console.log(colorScheme.error, `[Core][Error] ${err}`)
+		})
+	}
 	mysql_con.query('INSERT INTO users (user_id) VALUES (msg.author.id)').catch((err) => {
 		console.log(colorScheme.error, `[Core][Error] ${err}`)
 	})
