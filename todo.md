@@ -66,6 +66,11 @@ Compare the fields that your are using in your query and the database, most of t
 
 You forgot to check if the user is already registered before registering.
 
+Make your message more game-like. For example:  
+* Use `person` instead of `account`
+* Think of a funny little message that point towards their account being created successfully.
+* You could also make an array with multiple messages and randomly pick one. (I'll explain soon why this would be very cool)
+
 Also make the command `register` not `start` <-- You didn't change this yet
 
 ## Create a dynamic event handler that triggers randomly when someone sends a message in the server (just like pokécord (or whatever it's name is))
