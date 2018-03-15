@@ -172,4 +172,4 @@ bot.registerCommand('start', (msg) => {
 	mysql_con.query('INSERT INTO users (user_id, money, job) VALUES (msg.author.id, 0, null)')
 })
 
-bot.connect()
+bot.connect() // BIT.CONNEEEEEEEEEEEEEEEEEEEEEEEEECCCTTTTTTTTT("steal_money")!!!!!!!!
