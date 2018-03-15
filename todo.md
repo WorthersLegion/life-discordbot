@@ -62,6 +62,10 @@ Or responding to people on Github.
 
 Please see the ready code mysql query (as example) to see how to properly handle a mysql query.
 
+Compare the fields that your are using in your query and the database, most of them have default values (giving via table) and can be ignored when query-ing.
+
+You forgot to check if the user is already registered before registering.
+
 Also make the command `register` not `start` <-- You didn't change this yet
 
 ## Create a dynamic event handler that triggers randomly when someone sends a message in the server (just like pokécord (or whatever it's name is))

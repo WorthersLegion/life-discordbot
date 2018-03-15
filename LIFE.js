@@ -148,7 +148,7 @@ bot.on("ready", () => {
 
 // ALL OTHER CODE HERE!
 
-// Bot on's:
+// Bot on's
 bot.on('guildCreate', (guild) => {
 	console.log(colorScheme.info, `[CORE][Info] ${bot.username} was added to the server ${guild.name}!`)
 });
