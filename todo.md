@@ -1,10 +1,10 @@
 # Feature/TODO list for the developers
 1. Assign yourself an assignment by moving the assignment to your name (by opening this file in an editor and cut & paste it under your name in this file).
 2. After you are done with your assignment change "- [ ]" to "- [X]" but do not move it to finished yet and the lead developer (Androiddd) will check your code.
-2.1 The LEAD DEVELOPER will move the assignment if the code is good.
-2.2 In the case your code isn't good you will be asked to redo it/make changes before continueing another assignment. There will be a note left for you in this file under your name > Lead developer notes
-2.3 DO NOT move assignments to finished yourself!
-3. After you are done with an assignment and checked it off, assign yourself to another assignment and continue your work.
+3. The LEAD DEVELOPER will move the assignment if the code is good.
+4. In the case your code isn't good you will be asked to redo it/make changes before continueing another assignment. There will be a note left for you in this file under your name > Lead developer notes
+5. DO NOT move assignments to finished yourself!
+6. After you are done with an assignment and checked it off, assign yourself to another assignment and continue your work.
 
 If you have suggestion please put them on under "Suggestions" in the following format:
 [YOURNAME] DESCRIPTION OF SUGGESTION
