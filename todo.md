@@ -40,7 +40,7 @@ Extra info:
 
 
 ### Lead developer notes
-Please note that I'm mostly working on the TODO list and checking other people's code.
+Please note that I'm mostly working on the TODO list and checking other people's code.  
 Or responding to people on Github.
 
 ## Axiatinc's Tasks
