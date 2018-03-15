@@ -72,6 +72,9 @@ var botPrefix = "LIFE!"
 // Version of bot (Androiddd will change this every once in a while so don't about worry it)
 var version = "v0.0.1 (Closed Alpha)"
 
+// Defining users to be a object
+var users = {}
+
 // Defining bot aka Eris Command Client
 var bot = new Eris.CommandClient(botCred.token, {
 	maxShards: 'auto'
@@ -120,11 +123,26 @@ bot.on("ready", () => {
 		} else {
 			console.log(colorScheme.connectionIS, `[MySQL][Info] Connected to MySQL server (${mysqlData.host}:${mysqlData.port}) with username (${mysqlData.username}) on database (${mysqlData.database}).`)
 		}
-		bot.editStatus("online", {
-			name: `Type "${botPrefix}help" to get started!`
+		mysql_con.query("SELECT * FROM `users`", function(err, rows, fields) {
+			async.forEachOf(rows, (value, key, callback) => {
+				users[value.user_id] = {}
+				users[value.user_id]['user_id'] = value.user_id
+				users[value.user_id]['money'] = value.money
+				users[value.user_id]['job'] = value.job
+				users[value.user_id]['in_relation'] = value.in_relation
+				callback()
+			}, function(err) {
+				if (err) {
+					console.error(colorScheme.error, `[Core][Error] Error while loading user data from MySQL to Memory.`)
+					process.exit(2)
+				}
+				bot.editStatus("online", {
+					name: `Type "${botPrefix}help" to get started!`
+				})
+				console.log(colorScheme.connectionIS, `[Core][Info] Token log in as '${bot.user.username}#${bot.user.discriminator}'.`)
+				console.log(colorScheme.execSuccess, `[Core][Info] Bot loaded and running on ${bot.guilds.size} guilds with ${bot.users.size-1} users.`)
+			})
 		})
-		console.log(colorScheme.connectionIS, `[Core][Info] Token log in as '${bot.user.username}#${bot.user.discriminator}'.`)
-		console.log(colorScheme.execSuccess, `[Core][Info] Bot loaded and running on ${bot.guilds.size} guilds with ${bot.users.size-1} users.`)
 	})
 })
 

@@ -17,6 +17,9 @@ Unassigned/Assigned assignment:
 Completed assignment:
 - [X] *Some thing that you have to code*
 
+Finished assignment:
+- [X] *Some thing that you have to code* (by Androiddd)
+
 Suggestion:
 - [ ] *[Androiddd] Your mom gay*
 
@@ -37,7 +40,7 @@ Extra info:
 ## Suggestions
 
 ## Androiddd's Tasks
-- [ ] Change the ready code
+
 
 ### Lead developer notes
 none
@@ -66,3 +69,4 @@ EDIT: Also the mysql.js and botCred.js files are for credentials and such NOT fo
 So make the query in here see ready code for an example on how to use an query
 
 ## Finished (and checked)
+- [X] Change the ready code (by Androiddd)
