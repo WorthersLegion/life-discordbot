@@ -165,7 +165,7 @@ bot.registerCommand('start', (msg) => {
 })
 
 bot.on('messageCreate' (msg) => {
-	if randomInt(0, 50) === 1 {
+	if (randomInt(0, 50) === 1) {
 		msg.channel.createMessage(lifeEvents[randomInt(0, lifeEvents.length)])
 	}
 })
