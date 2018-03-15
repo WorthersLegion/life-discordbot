@@ -150,7 +150,9 @@ bot.on("ready", () => {
 
 // Bot on's
 bot.on('guildCreate', (guild) => {
-	console.log(colorScheme.info, `[Core][Info] ${bot.username} was added to the server ${guild.name}!`)
+	console.log(colorScheme.info, `[Core][Info] ${bot.username} was added to the server ${guild.name}!`).catch((err) => {
+		console.log(colorScheme.error, `[Core][Error] ${err}`)
+	})
 });
 
 bot.on('messageCreate', (msg) => {
