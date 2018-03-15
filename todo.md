@@ -29,15 +29,14 @@ Extra info:
 
 # LIST
 ## Unassigned
-- [ ] Create the first part of the "The Game of LIFE" game. (The college or start working choice)  
-└ If you know the board game you are allowed to make this feature otherwise please try to refrain from making this feature.
 - [ ] Create a way to retire to save your stats to the leaderboard  
 └ Also create a leaderboard in the database.
 
 ## Suggestions
 
 ## Androiddd's Tasks
-
+- [ ] Create the first part of the "The Game of LIFE" game. (The college or start working choice)  
+└ If you know the board game you are allowed to make this feature otherwise please try to refrain from making this feature.
 
 ### Lead developer notes
 Please note that I'm mostly working on the TODO list and checking other people's code.  

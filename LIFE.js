@@ -169,4 +169,5 @@ bot.on('messageCreate' (msg) => {
 		msg.channel.createMessage(lifeEvents[randomInt(0, lifeEvents.length)])
 	}
 })
+
 bot.connect()
