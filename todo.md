@@ -26,12 +26,12 @@ Extra info:
 
 # LIST
 ## Unassigned
-- [ ] Create the first part of the "The Game of LIFE" game. (The college or start working choice)
+- [ ] Create the first part of the "The Game of LIFE" game. (The college or start working choice)  
 └ If you know the board game you are allowed to make this feature otherwise please try to refrain from making this feature.
-- [ ] Create a way to retire to save your stats to the leaderboard
+- [ ] Create a way to retire to save your stats to the leaderboard  
 └ Also create a leaderboard in the database.
-- [ ] Create a dynamic event handler that triggers randomly when someone sends a message in the server (just like pokécord (or whatever it's name is))
-├ With this event handler random (life) events will pop up every now and then for the user that just sended a message (if he/she is registered ofc)
+- [ ] Create a dynamic event handler that triggers randomly when someone sends a message in the server (just like pokécord (or whatever it's name is))  
+├ With this event handler random (life) events will pop up every now and then for the user that just sended a message (if he/she is registered ofc)  
 └ Think about (life) events like: "You have an argument with your wife, what would you do?" (A: Something, B: Something, C: Something, etc. fill it up with whatever answers you can come up with but don't make like 52 answers)
 
 ## Suggestions
