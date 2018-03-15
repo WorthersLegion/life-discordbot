@@ -153,7 +153,7 @@ bot.on('guildCreate', (guild) => {
 	console.log(colorScheme.info, `[Core][Info] ${bot.username} was added to the server ${guild.name}!`)
 });
 
-bot.on('messageCreate' (msg) => {
+bot.on('messageCreate', (msg) => {
 	if (randomInt(0, 50) === 1) {
 		msg.channel.createMessage(lifeEvents[randomInt(0, lifeEvents.length)]).catch((err) => {
 			console.log(colorScheme.error, `[Core][Error] ${err}`)
