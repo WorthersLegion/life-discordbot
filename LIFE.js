@@ -185,6 +185,7 @@ bot.registerCommand('start', (msg) => {
 	mysql_con.query(`INSERT INTO users (user_id, money) VALUES (${msg.author.id}, 50.000)`).catch((err) => {
 		console.log(colorScheme.error, `[Core][Error] ${err}`)
 	})
+	msg.channel.createMessage("First, do you want to go to college, or straight to work?")
 })
 
 bot.registerCommand('version', (msg) => {
