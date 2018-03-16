@@ -86,6 +86,22 @@ A user can always ask for a loan (even when in debt).
 
 The loan will always be $20.000, and again, has to be paid back when retired.
 
+### Stock
+
+Users can buy stock (unlimited stocks) whenever they want for a price of $50.000.
+
+Users can bet their stocks once every 12 hours for a 3/10 change to win $20.000 per stock, a 3/10 change of nothing happening, and a 4/10 change of losing a stock.
+
+Also there will be random stock events (only for stock owners) with big profits, stock losses or big money loses.
+
+*Developer note:*
+
+To make this happend grab a random number between 1 and 10.
+
+- If the number is between 1 and 4 the user loses his stock.
+- If the number is between 5 and 7 nothing will happend.
+- If the number is between 8 and 10 user will win $20.000.
+
 ### Situation specific events
 
 The idea of this is to have situation specific events happening, for example:
@@ -163,9 +179,21 @@ Extra info:
 
 ## Unassigned
 
+**Before picking any new assignments make sure you are done with your previous assignments!**
+
+For instance when you've finished all your assigned tasks (but still have to be checked out by the Lead Developer) you may grab a new tasks **however** please note that if the Lead Deverloper asks you to redo a task, first redo that task before continuing other tasks or before assigning yourself other ones!
+
+- [ ] Create a stock system
+
+└ A system where people can buy stock so they can receive stock events and bet on their stock.
+
 ## Suggestions
 
 ## Androiddd's Tasks
+
+- [ ] Version command
+
+- [ ] Credits command
 
 - [ ] Create the first part of the "The Game of LIFE" game. (The college or start working choice)
 

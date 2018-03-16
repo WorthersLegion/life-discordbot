@@ -106,6 +106,7 @@ function isEmpty(str) {
 // Vars, arrays and objects about the game
 var lifeEvents = ["You had an argument with your wife.", "You had a baby boy.", "You had a baby girl.", "You had twins! One baby boy and one baby girl", "You had twins! Two girls!", "You had twins! Two boys!", "You got married!"]
 var startMessages = ["You have been born. Good luck with life.", "Your consciousness has been put in a car. You are a car now, are you happy?", "Ever wanted to play a game in text? Now you can. Welcome in LIFE.", "Come on Karen, this is the 15th baby you've had.", "Don't you dare start crying now, save your tears for later in life."] // Will add more SOON
+
 // Ready code TODO: Start over cuz I stole it from myself. (Let Androiddd worry about it)
 bot.on("ready", () => {
 	mysql_con = mysql.createPool({
