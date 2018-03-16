@@ -188,7 +188,11 @@ For instance when you've finished all your assigned tasks (but still have to be 
 
 - [ ] Version command
 
+└ Grab the version from the variable.
+
 - [ ] Credits command
+
+└ We might have to make all of the credit info in a new file to keep everything sorted. (If that makes sense, sorry my brain is fried rn :P)
 
 ## Suggestions
 
