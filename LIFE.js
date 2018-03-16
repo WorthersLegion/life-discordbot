@@ -182,7 +182,7 @@ bot.registerCommand('start', (msg) => {
 			console.log(colorScheme.error, `[Core][Error] ${err}`)
 		})
 	}
-	mysql_con.query('INSERT INTO users (user_id) VALUES (msg.author.id)').catch((err) => {
+	mysql_con.query(`INSERT INTO users (user_id, money) VALUES (${msg.author.id}, 50.000)`).catch((err) => {
 		console.log(colorScheme.error, `[Core][Error] ${err}`)
 	})
 })
