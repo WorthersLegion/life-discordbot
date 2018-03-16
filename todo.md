@@ -236,27 +236,31 @@ Or responding to people on Github.
 
 ~~So make the query in here see ready code for an example on how to use an query~~
 
-Please see the ready code mysql query (as example) to see how to properly handle a mysql query.
+~~Please see the ready code mysql query (as example) to see how to properly handle a mysql query.~~
 
-Compare the fields that your are using in your query and the database, most of them have default values (giving via table) and can be ignored when query-ing.
+~~Compare the fields that your are using in your query and the database, most of them have default values (giving via table) and can be ignored when query-ing.~~
 
-You forgot to check if the user is already registered before registering.
+~~You forgot to check if the user is already registered before registering.~~
 
-Make your message more game-like. For example:
+~~Make your message more game-like. For example:~~
 
-- Use `person` instead of `account`
-- Think of a funny little message that point towards their account being created successfully.
-- You could also make an array with multiple messages and randomly pick one. (I'll explain soon why this would be very cool)
+- ~~Use `person` instead of `account`~~
+- ~~Think of a funny little message that point towards their account being created successfully.~~
+- ~~You could also make an array with multiple messages and randomly pick one. (I'll explain soon why this would be very cool)~~
+
+You are creating a message saying the register is succesfull but you don't know this for sure since the database code is running after that.
 
 ## Create a dynamic event handler that triggers randomly when someone sends a message in the server (just like pokécord (or whatever it's name is))
 
 ~~Please recheck your code. Your if statement is incorrect.~~
 
-Your bot.on line is incorrect it misses a ,
+~~Your bot.on line is incorrect it misses a ,~~
 
-Your `lifeEvents` variable is very good. Just one note: Don't fill it with anything else.
-How it is right now is a great **placeholder**.
-We will fill it up later on. (There will be a new assignment when it's time)
+~~Your `lifeEvents` variable is very good. Just one note: Don't fill it with anything else.~~
+~~How it is right now is a great **placeholder**.~~
+~~We will fill it up later on. (There will be a new assignment when it's time)~~
+
+You didn't check if the user is actually registered.
 
 ## Finished (and checked)
 
