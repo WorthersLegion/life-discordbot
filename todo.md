@@ -180,8 +180,6 @@ Or responding to people on Github.
 
 - [X] Create a way for a user to register, after that event is fired create the user in the database
 
-└ ALSO make an array with the default user data! Use this array to fill in the blank spots in the database table. (See the database table for all the fields)
-
 - [ ] Create a dynamic event handler that triggers randomly when someone sends a message in the server (just like pokécord (or whatever it's name is))
 
 ├ With this event handler random (life) events will pop up every now and then for the user that just sended a message (if he/she is registered ofc)
