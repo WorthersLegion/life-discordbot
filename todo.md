@@ -187,13 +187,15 @@ For instance when you've finished all your assigned tasks (but still have to be 
 
 └ A system where people can buy stock so they can receive stock events and bet on their stock.
 
+- [ ] Version command
+
+- [ ] Credits command
+
 ## Suggestions
 
 ## Androiddd's Tasks
 
-- [ ] Version command
-
-- [ ] Credits command
+- [ ] Making a way to efficiently store all events
 
 - [ ] Create the first part of the "The Game of LIFE" game. (The college or start working choice)
 
