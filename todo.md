@@ -58,7 +58,6 @@ When a user choses to retire the user has to pay off it's debt and the end resul
 The following information should be sended to the leaderboard:
 
 - User ID (do not print this)
-- Username#Discrim
 - Total amount of money (this will be used to sort the leaderboard)
 - Job
 - Salary
