@@ -72,6 +72,9 @@ var botPrefix = "LIFE!"
 // Version of bot (Androiddd will change this every once in a while so don't about worry it)
 var version = "v0.0.1 (Closed Alpha)"
 
+// Here will the user data be stored after reading it from the database @ bot on ready
+var users = {}
+
 // Defining bot aka Eris Command Client
 var bot = new Eris.CommandClient(botCred.token, {
 	maxShards: 'auto'
@@ -191,13 +194,5 @@ bot.registerCommand('start', (msg) => {
 bot.registerCommand('version', (msg) => {
 	msg.channel.createMessage(":gear: I'm currently on v0.0.1 (Closed Alpha)")
 })
-bot.registerCommand('buystock', (msg) => {
-	msg.channel.createMessage('You have bought stock.')
-	
-	mysql_con.query(`SELECT money FROM users WHERE ${msg.author.id}` , function (error, results, fields) {
-  // error will be an Error if one occurred during the query
-  
-  // fields will contain information about the returned results fields (if any)
-});
-})
+
 bot.connect() // BIT.CONNEEEEEEEEEEEEEEEEEEEEEEEEECCCTTTTTTTTT("steal_money")!!!!!!!!
