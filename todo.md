@@ -40,8 +40,9 @@ This bot will be about the board game: The Game of LIFE (TM).
 
 ## Legenda
 
-Turn(s) will be a command called `taketurn`.
-Events will be listed later (dw).
+- Turn(s) will be a command called `taketurn`.
+  - There will be 2 commands 1 for when in college and 1 for after college/work.
+- Events will be listed later (dw).
 
 ## Registration & First choice
 
@@ -53,7 +54,7 @@ If a user chooses to go to college take away $50.000, set the college switch to 
 
 ## College
 
-The user will have to stay in college for at least 2 turns and a maximum of 11 turns.
+The user will have to stay in college for at least 2 turns and a maximum of 11 turns. (With a cooldown of 30 seconds)
 
 After this let the bot choose randomly if the user graduated or not and pick a random job (with degree jobs included if the user graduated) and a random salary.
 
@@ -67,7 +68,96 @@ etc. you get the point
 
 ## Immediately start working
 
-If the user choses this as their first move then give them an random job (**excluding** the degree jobs)
+If the user choses this as their first move then give them an random job (**excluding** the degree jobs) and a random salary.
+
+(Just like with the college one, have some funny response to it)
+
+## After getting a job
+
+After you get a job the player can take a turn (with a cooldown of 60 seconds) to force a random event to happen.
+
+Random events will happen randomly after a message has been send. (Regardless of the cooldown)
+
+This events will happen to the user that sended a message.
+
+(Please check if the user is actually registered before sending out a random lifeEvent, this is to prevent API spamming to Discord unnecessarily
+
+So first check if user is registered, if true then generate a random number between something and something (have to think of a right ratio) and compare it to 1, if 1 then pick random life event and send it.
+)
+
+## Retirement/Leaderboard
+
+*Only the official bot will have a **global** leaderboard.*
+
+When a user choses to retire the user has to pay off it's debt and the end result will be send to the leaderboard.
+
+The following information should be sended to the leaderboard:
+
+- User ID (do not print this)
+- Username#Discrim
+- Total amount of money (this will be used to sort the leaderboard)
+- Job
+- Salary
+- Amount of LIFE tiles and how much they are worth in total
+
+**NOTE: a user can ONLY get on the leaderboard by retiring!**
+
+(See *"Unfortunate" circumstances* for more information)
+
+## Other stuff
+
+### Salary
+
+Salary will be givin between every 2-9 turns.
+
+To figure out when the salary will be given we'll generate a random number and compare it to a random number from the salarySpace array (will be implemented soon)
+
+If the number is higher or equal then the random number from the salarySpace then give salary.
+
+(This methode is being re-thought because it looks a little too easy to make money)
+
+### Loans
+
+A user can always ask for a loan (even when in debt).
+
+The loan will always be $20.000, and again, has to be paid back when retired.
+
+### Situation specific events
+
+The idea of this is to have situation specific events happening, for example:
+
+- The user is very poor and will get more events about being poor.
+  - A hobo wants to fight because he/she thinks you stole something the other day from him/her.
+  - A loanshark from a mafia is contacting you to lent you some money (idea for cross-player events?).
+  - Because you're poor certain events will have a higher negative outcome (like having a job interview for office work where you required to wear a suite but you are too poor for that) but other certain events will have a higher **positive** outcome (like getting free/cheap food from organizations).
+
+However this can also work the other way around.
+
+- The user is very rich and will get more events about being rich.
+  - If the user has stock play more stock events.
+  - If user has multiple lots (like a house) play more house events.
+  - The user gets events about exclusive clubs.
+  - Will be more of a target for a hitman (cross-player idea maybe?)
+
+### "Unfortunate" circumstances
+
+Stated in *Retirement/Leaderboard* the only way you can get on the leaderboard is to retire. But what if an life event happends and you die?
+
+That way you don't get on the leaderboard and have to start again.
+
+This way there is a sort of challenge to the game.
+
+Examples of "Unfortunate" circumstances:
+
+- Because you are poor and didn't payback the loanshark he orderd his friends to kill you.
+- You have been taken out by a hitman because someone was jealous of your wealth.
+- You died while working (make this one more specific to the job).
+- You died while in a shootout in the mall.
+- You died by intoxication.
+
+### Friend system
+
+*Still thinking about this idea give me some more time*
 
 # LIST
 
