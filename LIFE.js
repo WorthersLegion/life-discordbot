@@ -105,7 +105,7 @@ function isEmpty(str) {
 
 // Vars, arrays and objects about the game
 var lifeEvents = ["You had an argument with your wife.", "You had a baby boy.", "You had a baby girl.", "You had twins! One baby boy and one baby girl", "You had twins! Two girls!", "You had twins! Two boys!", "You got married!"]
-
+var startMessages = ["You have been born. Good luck with life.", "Your consciousness has been put in a car. You are a car now, are you happy?", "Ever wanted to play a game in text? Now you can. Welcome in LIFE.", "Come on Karen, this is the 15th baby you've had.", "Don't you dare start crying now, save your tears for later in life."] // Will add more SOON
 // Ready code TODO: Start over cuz I stole it from myself. (Let Androiddd worry about it)
 bot.on("ready", () => {
 	mysql_con = mysql.createPool({
@@ -150,26 +150,42 @@ bot.on("ready", () => {
 
 // Bot on's
 bot.on('guildCreate', (guild) => {
-	console.log(colorScheme.info, `[CORE][Info] ${bot.username} was added to the server ${guild.name}!`)
+	console.log(colorScheme.info, `[Core][Info] ${bot.username} was added to the server ${guild.name}!`).catch((err) => {
+		console.log(colorScheme.error, `[Core][Error] ${err}`)
+	})
 });
 
-bot.on('messageCreate' (msg) => {
+bot.on('messageCreate', (msg) => {
 	if (randomInt(0, 50) === 1) {
-		msg.channel.createMessage(lifeEvents[randomInt(0, lifeEvents.length)])
+		msg.channel.createMessage(lifeEvents[randomInt(0, lifeEvents.length)]).catch((err) => {
+			console.log(colorScheme.error, `[Core][Error] ${err}`)
+		})
 	}
 })
 
 // Registered commands
 bot.registerCommand('ping', (msg) => {
-	msg.channel.createMessage('pong').
+	msg.channel.createMessage('pong').catch((err) => {
+		console.log(`[Core][Error] ${err}`)
+	})
 	then(newMsg => {
-		bot.editMessage(newMsg.channel.id, newMsg.id, `\`\`\`javascript/npong | Time taken: ${newMsg.timestanp - msg.timestamp} ms\`\`\``);
+		bot.editMessage(newMsg.channel.id, newMsg.id, `\`\`\`javascript/npong | Time taken: ${newMsg.timestanp - msg.timestamp} ms\`\`\``).catch((err) => {
+			console.log(colorScheme.error, `[Core][Error] ${err}`)
+		})
 	})
 });
 
 bot.registerCommand('start', (msg) => {
-	msg.channel.createMessage(`Welcome to The Game of Life! I've made you an account, so use ${botPrefix}help to get started!`)
-	mysql_con.query('INSERT INTO users (user_id, money, job) VALUES (msg.author.id, 0, null)')
+	if (randomInt(0, 50) === 1) {
+		msg.channel.createMessage(startMessages[randomint(0, startMessages.length)]).catch((err) => {
+			console.log(colorScheme.error, `[Core][Error] ${err}`)
+		})
+	}
+	mysql_con.query('INSERT INTO users (user_id) VALUES (msg.author.id)').catch((err) => {
+		console.log(colorScheme.error, `[Core][Error] ${err}`)
+	})
 })
+
+
 
 bot.connect() // BIT.CONNEEEEEEEEEEEEEEEEEEEEEEEEECCCTTTTTTTTT("steal_money")!!!!!!!!
