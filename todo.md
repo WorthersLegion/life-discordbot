@@ -1,6 +1,6 @@
 # Summary of bot
 
-This bot will be about the board game: The Game of LIFE (TM).
+This bot will be about the board game: The Game of LIFE [TM].
 
 ## Legenda
 
