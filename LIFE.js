@@ -193,7 +193,11 @@ bot.registerCommand('version', (msg) => {
 })
 bot.registerCommand('buystock', (msg) => {
 	msg.channel.createMessage('You have bought stock.')
-	mysql_con.query(`UPDATE users SET money=` + mysql_con.query(`SELECT money FROM users WHERE user_id=${msg.author.id}`) - 20.000)
 	
+	mysql_con.query(`SELECT money FROM users WHERE ${msg.author.id}` , function (error, results, fields) {
+  // error will be an Error if one occurred during the query
+  
+  // fields will contain information about the returned results fields (if any)
+});
 })
 bot.connect() // BIT.CONNEEEEEEEEEEEEEEEEEEEEEEEEECCCTTTTTTTTT("steal_money")!!!!!!!!
