@@ -188,7 +188,7 @@ bot.registerCommand('start', (msg) => {
 })
 
 bot.registerCommand('version', (msg) => {
-	msg.channel.createMessage(":gear: I'm currently on version 1.0 BETA"
+	msg.channel.createMessage(":gear: I'm currently on version 1.0 BETA")
 })
 
 bot.connect() // BIT.CONNEEEEEEEEEEEEEEEEEEEEEEEEECCCTTTTTTTTT("steal_money")!!!!!!!!
