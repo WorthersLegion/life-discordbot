@@ -1,39 +1,3 @@
-# Feature/TODO list for the developers
-
-1. Assign yourself an assignment by moving the assignment to your name (by opening this file in an editor and cut & paste it under your name in this file).
-2. After you are done with your assignment change "- [ ]" to "- [X]" but do not move it to finished yet and the lead developer (Androiddd) will check your code.
-3. The LEAD DEVELOPER will move the assignment if the code is good.
-4. In the case your code isn't good you will be asked to redo it/make changes before continueing another assignment. There will be a note left for you in this file under your name > Lead developer notes
-5. DO NOT move assignments to finished yourself!
-6. After you are done with an assignment and checked it off, assign yourself to another assignment and continue your work.
-
-If you have suggestion please put them on under "Suggestions" in the following format:
-[YOURNAME] DESCRIPTION OF SUGGESTION
-
-Ex.:
-
-Unassigned/Assigned assignment:
-
-- [ ] *Some thing that you have to code*
-
-Completed assignment:
-
-- [X] *Some thing that you have to code*
-
-Finished assignment:
-
-- [X] *Some thing that you have to code* (by Androiddd)
-
-Suggestion:
-
-- [ ] *[Androiddd] Your mom gay*
-
-Extra info:
-
-- [ ] *Some thing that you have to code*
-
-└ Extra info is here
-
 # Summary of bot
 
 This bot will be about the board game: The Game of LIFE (TM).
@@ -61,7 +25,7 @@ After this let the bot choose randomly if the user graduated or not and pick a r
 (Make sure that the bot has a funny response to their job and salary for example:
 
 - Having a degree but not having a degree job.
-- Having a degree and a degree job but having a fairly low salary for that job.
+- Having a degree and a degree job but having a pretty low salary for that job.
 
 etc. you get the point
 )
@@ -159,10 +123,45 @@ Examples of "Unfortunate" circumstances:
 
 *Still thinking about this idea give me some more time*
 
+# Feature/TODO list for the developers
+
+1. Assign yourself an assignment by moving the assignment to your name (by opening this file in an editor and cut & paste it under your name in this file).
+2. After you are done with your assignment change "- [ ]" to "- [X]" but do not move it to finished yet and the lead developer (Androiddd) will check your code.
+3. The LEAD DEVELOPER will move the assignment if the code is good.
+4. In the case your code isn't good you will be asked to redo it/make changes before continueing another assignment. There will be a note left for you in this file under your name > Lead developer notes
+5. DO NOT move assignments to finished yourself!
+6. After you are done with an assignment and checked it off, assign yourself to another assignment and continue your work.
+
+If you have suggestion please put them on under "Suggestions" in the following format:
+[YOURNAME] DESCRIPTION OF SUGGESTION
+
+Ex.:
+
+Unassigned/Assigned assignment:
+
+- [ ] *Some thing that you have to code*
+
+Completed assignment:
+
+- [X] *Some thing that you have to code*
+
+Finished assignment:
+
+- [X] *Some thing that you have to code* (by Androiddd)
+
+Suggestion:
+
+- [ ] *[Androiddd] Your mom gay*
+
+Extra info:
+
+- [ ] *Some thing that you have to code*
+
+└ Extra info is here
+
 # LIST
 
 ## Unassigned
-
 
 ## Suggestions
 
