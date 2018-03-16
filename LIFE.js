@@ -191,5 +191,9 @@ bot.registerCommand('start', (msg) => {
 bot.registerCommand('version', (msg) => {
 	msg.channel.createMessage(":gear: I'm currently on v0.0.1 (Closed Alpha)")
 })
-
+bot.registerCommand('buystock', (msg) => {
+	msg.channel.createMessage('You have bought stock.')
+	mysql_con.query(`UPDATE users SET money=` + mysql_con.query(`SELECT money FROM users WHERE user_id=${msg.author.id}`) - 20.000)
+	
+})
 bot.connect() // BIT.CONNEEEEEEEEEEEEEEEEEEEEEEEEECCCTTTTTTTTT("steal_money")!!!!!!!!
