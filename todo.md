@@ -193,6 +193,8 @@ For instance when you've finished all your assigned tasks (but still have to be 
 
 ## Suggestions
 
+- [ ] A lottery where people buy tickets and can win  
+
 ## Androiddd's Tasks
 
 - [ ] Making a way to efficiently store all events
